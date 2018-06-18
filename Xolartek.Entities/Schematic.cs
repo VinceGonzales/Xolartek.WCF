@@ -19,7 +19,7 @@ namespace Xolartek.Entities
         public decimal CritDamage { get; set; }
         public decimal AttackRate { get; set; }
         public decimal DurabilityPerUse { get; set; }
-        public string Impact { get; set; }
+        public int Impact { get; set; }
         public decimal ReloadTime { get; set; }
         public int MagazineSize { get; set; }
         public int Range { get; set; }

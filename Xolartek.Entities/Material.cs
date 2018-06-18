@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections.Generic;
 
 namespace Xolartek.Entities
 {
@@ -31,5 +31,7 @@ namespace Xolartek.Entities
                 _picture = value;
             }
         }
+
+        public ICollection<MaterialCost> MaterialCosts { get; set; }
     }
 }

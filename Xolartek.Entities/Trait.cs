@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections.Generic;
 
 namespace Xolartek.Entities
 {
@@ -6,5 +6,7 @@ namespace Xolartek.Entities
     {
         public int Id { get; set; }
         public string Description { get; set; }
+
+        public ICollection<TraitImpact> TraitImpacts { get; set; }
     }
 }

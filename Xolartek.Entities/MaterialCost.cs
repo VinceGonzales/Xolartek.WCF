@@ -10,6 +10,7 @@ namespace Xolartek.Entities
         public int Cost { get; set; }
         public int WeaponClass { get; set; }
         public int MaterialId { get; set; }
+        public int SchematicId { get; set; }
 
         private IMaterial _material;
         public Material Material
@@ -32,6 +33,30 @@ namespace Xolartek.Entities
             set
             {
                 _material = value;
+            }
+        }
+
+        private ISchematic _schematic;
+        public Schematic Schematic
+        {
+            get
+            {
+                return (Schematic)_schematic;
+            }
+            set
+            {
+                _schematic = (Schematic)value;
+            }
+        }
+        ISchematic IMaterialCost.Schematic
+        {
+            get
+            {
+                return _schematic;
+            }
+            set
+            {
+                _schematic = value;
             }
         }
     }

@@ -17,7 +17,7 @@ namespace Xolartek.Entities
         decimal CritDamage { get; set; }
         decimal AttackRate { get; set; }
         decimal DurabilityPerUse { get; set; }
-        string Impact { get; set; }
+        int Impact { get; set; }
         ICollection<ITraitImpact> Traits { get; set; }
         ICollection<IMaterialCost> Materials { get; set; }
         int? PictureId { get; set; }

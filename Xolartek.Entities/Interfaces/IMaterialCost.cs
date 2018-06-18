@@ -8,6 +8,8 @@ namespace Xolartek.Entities
         int Cost { get; set; }
         int WeaponClass { get; set; }
         int MaterialId { get; set; }
+        int SchematicId { get; set; }
         IMaterial Material { get; set; }
+        ISchematic Schematic { get; set; }
     }
 }
