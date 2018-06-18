@@ -7,6 +7,7 @@ namespace Xolartek.Entities
         int Id { get; set; }
         string Name { get; set; }
         string Description { get; set; }
+        int WeaponClass { get; set; }
         int Durability { get; set; }
         ITrait Rarity { get; set; }
         int Level { get; set; }
@@ -21,5 +22,9 @@ namespace Xolartek.Entities
         ICollection<IMaterialCost> Materials { get; set; }
         int? PictureId { get; set; }
         IPicture Picture { get; set; }
+        int? WeaponTypeId { get; set; }
+        ITrait WeaponType { get; set; }
+        int? WeaponEditionId { get; set; }
+        ITrait WeaponEdition { get; set; }
     }
 }
