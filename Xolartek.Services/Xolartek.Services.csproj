@@ -71,12 +71,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Xolartek.Data\Xolartek.Data.csproj">
-      <Project>{e40ae0dc-390f-42d6-b2fe-7e8c2f72a0bb}</Project>
-      <Name>Xolartek.Data</Name>
+    <ProjectReference Include="..\Xolartek.Domain\Xolartek.Domain.csproj">
+      <Project>{f1d236cb-2049-4029-b2fc-449d3f3fa898}</Project>
+      <Name>Xolartek.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\Xolartek.Entities\Xolartek.Entities.csproj">
-      <Project>{f3d989b0-1006-43d0-996a-eed8e8481b2c}</Project>
+      <Project>{d1f93998-4c90-4527-aa25-bce3e6b35798}</Project>
       <Name>Xolartek.Entities</Name>
     </ProjectReference>
   </ItemGroup>
@@ -91,7 +91,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{3D9AD99F-2412-4246-B90B-4EAA41C64699}">
         <WcfProjectProperties>
-          <AutoStart>True</AutoStart>
+          <AutoStart>False</AutoStart>
         </WcfProjectProperties>
       </FlavorProperties>
     </VisualStudio>
