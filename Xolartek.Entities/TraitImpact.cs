@@ -6,14 +6,14 @@ namespace Xolartek.Entities
 {
     public class TraitImpact : ITraitImpact
     {
-        public int Id { get; set; }
-        public string Impact { get; set; }
-        public int WeaponClass { get; set; }
-        public int TraitId { get; set; }
-        public int SchematicId { get; set; }
+        public virtual int Id { get; set; }
+        public virtual string Impact { get; set; }
+        public virtual int WeaponClass { get; set; }
+        public virtual int TraitId { get; set; }
+        public virtual int SchematicId { get; set; }
 
         private ITrait _trait { get; set; }
-        public Trait Trait
+        public virtual Trait Trait
         {
             get
             {
@@ -37,7 +37,7 @@ namespace Xolartek.Entities
         }
 
         private ISchematic _schematic;
-        public Schematic Schematic
+        public virtual Schematic Schematic
         {
             get
             {

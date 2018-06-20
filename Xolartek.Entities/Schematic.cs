@@ -6,27 +6,26 @@ namespace Xolartek.Entities
 {
     public class Schematic : ISchematic, IWeaponMelee, IWeaponRange, IWeaponTrap
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public int WeaponClass { get; set; }
-        public int Durability { get; set; }
-        public ITrait Rarity { get; set; }
-        public int Level { get; set; }
-        public int Stars { get; set; }
-        public int Damage { get; set; }
-        public decimal CritChance { get; set; }
-        public decimal CritDamage { get; set; }
-        public decimal AttackRate { get; set; }
-        public decimal DurabilityPerUse { get; set; }
-        public int Impact { get; set; }
-        public decimal ReloadTime { get; set; }
-        public int MagazineSize { get; set; }
-        public int Range { get; set; }
-        public int AmmoCost { get; set; }
+        public virtual int Id { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string Description { get; set; }
+        public virtual int WeaponClass { get; set; }
+        public virtual int Durability { get; set; }
+        public virtual int Level { get; set; }
+        public virtual int Stars { get; set; }
+        public virtual int Damage { get; set; }
+        public virtual decimal CritChance { get; set; }
+        public virtual decimal CritDamage { get; set; }
+        public virtual decimal AttackRate { get; set; }
+        public virtual decimal DurabilityPerUse { get; set; }
+        public virtual int Impact { get; set; }
+        public virtual decimal ReloadTime { get; set; }
+        public virtual int MagazineSize { get; set; }
+        public virtual int Range { get; set; }
+        public virtual int AmmoCost { get; set; }
 
         private ICollection<ITraitImpact> _traits;
-        public ICollection<TraitImpact> Traits
+        public virtual ICollection<TraitImpact> Traits
         {
             get
             {
@@ -54,7 +53,7 @@ namespace Xolartek.Entities
         }
 
         private ICollection<IMaterialCost> _materials;
-        public ICollection<MaterialCost> Materials
+        public virtual ICollection<MaterialCost> Materials
         {
             get
             {
@@ -81,9 +80,34 @@ namespace Xolartek.Entities
             }
         }
 
-        public int? PictureId { get; set; }
+        public virtual int RarityId { get; set; }
+        private ITrait _rarity { get; set; }
+        public virtual Trait Rarity
+        {
+            get
+            {
+                return (Trait)_rarity;
+            }
+            set
+            {
+                _rarity = (Trait)value;
+            }
+        }
+        ITrait ISchematic.Rarity
+        {
+            get
+            {
+                return _rarity;
+            }
+            set
+            {
+                _rarity = value;
+            }
+        }
+
+        public virtual int? PictureId { get; set; }
         private IPicture _picture;
-        public Picture Picture
+        public virtual Picture Picture
         {
             get
             {
@@ -106,9 +130,9 @@ namespace Xolartek.Entities
             }
         }
 
-        public int? WeaponEditionId { get; set; }
+        public virtual int? WeaponEditionId { get; set; }
         private ITrait _weaponEdition;
-        public Trait WeaponEdition
+        public virtual Trait WeaponEdition
         {
             get
             {
@@ -131,9 +155,9 @@ namespace Xolartek.Entities
             }
         }
 
-        public int? WeaponTypeId { get; set; }
+        public virtual int? WeaponTypeId { get; set; }
         private ITrait _weaponType;
-        public Trait WeaponType
+        public virtual Trait WeaponType
         {
             get
             {

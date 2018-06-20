@@ -4,9 +4,9 @@ namespace Xolartek.Entities
 {
     public class Picture : IPicture
     {
-        public int Id { get; set; }
-        public string Source { get; set; }
-        public string CSSClass { get; set; }
-        public string Alternate { get; set; }
+        public virtual int Id { get; set; }
+        public virtual string Source { get; set; }
+        public virtual string CSSClass { get; set; }
+        public virtual string Alternate { get; set; }
     }
 }
