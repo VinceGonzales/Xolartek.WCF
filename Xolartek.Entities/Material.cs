@@ -1,14 +1,20 @@
 ﻿using System.Collections.Generic;
+using System.Runtime.Serialization;
 
 namespace Xolartek.Entities
 {
+    [DataContract]
     public class Material : IMaterial
     {
+        [DataMember]
         public virtual int Id { get; set; }
+        [DataMember]
         public virtual string Description { get; set; }
+        [DataMember]
         public virtual int? PictureId { get; set; }
 
         private IPicture _picture;
+        [DataMember]
         public virtual Picture Picture
         {
             get
@@ -32,6 +38,7 @@ namespace Xolartek.Entities
             }
         }
 
+        [DataMember]
         public virtual ICollection<MaterialCost> MaterialCosts { get; set; }
     }
 }

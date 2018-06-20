@@ -1,18 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Runtime.Serialization;
 
 namespace Xolartek.Entities
 {
+    [DataContract]
     public class MaterialCost : IMaterialCost
     {
+        [DataMember]
         public virtual int Id { get; set; }
+        [DataMember]
         public virtual int Cost { get; set; }
+        [DataMember]
         public virtual int WeaponClass { get; set; }
+        [DataMember]
         public virtual int MaterialId { get; set; }
+        [DataMember]
         public virtual int SchematicId { get; set; }
 
         private IMaterial _material;
+        [DataMember]
         public virtual Material Material
         {
             get
@@ -37,6 +42,7 @@ namespace Xolartek.Entities
         }
 
         private ISchematic _schematic;
+        [DataMember]
         public virtual Schematic Schematic
         {
             get

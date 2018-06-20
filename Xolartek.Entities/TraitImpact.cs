@@ -1,18 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Runtime.Serialization;
 
 namespace Xolartek.Entities
 {
+    [DataContract]
     public class TraitImpact : ITraitImpact
     {
+        [DataMember]
         public virtual int Id { get; set; }
+        [DataMember]
         public virtual string Impact { get; set; }
+        [DataMember]
         public virtual int WeaponClass { get; set; }
+        [DataMember]
         public virtual int TraitId { get; set; }
+        [DataMember]
         public virtual int SchematicId { get; set; }
 
         private ITrait _trait { get; set; }
+        [DataMember]
         public virtual Trait Trait
         {
             get
@@ -37,6 +42,7 @@ namespace Xolartek.Entities
         }
 
         private ISchematic _schematic;
+        [DataMember]
         public virtual Schematic Schematic
         {
             get
