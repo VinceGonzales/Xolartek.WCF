@@ -16,7 +16,8 @@ namespace Xolartek.Domain
 
             HasMany<MaterialCost>(m => m.MaterialCosts)
                 .WithRequired(mc => mc.Material)
-                .HasForeignKey(mc => mc.MaterialId);
+                .HasForeignKey(mc => mc.MaterialId)
+                .WillCascadeOnDelete(false);
 
             HasOptional(m => m.Picture);
         }

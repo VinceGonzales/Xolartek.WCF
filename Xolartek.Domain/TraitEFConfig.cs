@@ -16,7 +16,8 @@ namespace Xolartek.Domain
 
             HasMany<TraitImpact>(t => t.TraitImpacts)
                 .WithRequired(ti => ti.Trait)
-                .HasForeignKey(ti => ti.TraitId);
+                .HasForeignKey(ti => ti.TraitId)
+                .WillCascadeOnDelete(false);
 
         }
     }

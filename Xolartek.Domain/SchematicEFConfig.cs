@@ -18,11 +18,13 @@ namespace Xolartek.Domain
 
             HasMany<TraitImpact>(s => s.Traits)
                 .WithRequired(ti => ti.Schematic)
-                .HasForeignKey(ti => ti.SchematicId);
+                .HasForeignKey(ti => ti.SchematicId)
+                .WillCascadeOnDelete(false);
 
             HasMany<MaterialCost>(s => s.Materials)
                 .WithRequired(mc => mc.Schematic)
-                .HasForeignKey(mc => mc.SchematicId);
+                .HasForeignKey(mc => mc.SchematicId)
+                .WillCascadeOnDelete(false);
 
             HasOptional(s => s.Picture);
             HasOptional(s => s.WeaponEdition);
