@@ -7,15 +7,15 @@ namespace Xolartek.Entities
     public class Material : IMaterial
     {
         [DataMember]
-        public virtual int Id { get; set; }
+        public int Id { get; set; }
         [DataMember]
-        public virtual string Description { get; set; }
+        public string Description { get; set; }
         [DataMember]
-        public virtual int? PictureId { get; set; }
+        public int? PictureId { get; set; }
 
         private IPicture _picture;
         [DataMember]
-        public virtual Picture Picture
+        public Picture Picture
         {
             get
             {
@@ -39,6 +39,6 @@ namespace Xolartek.Entities
         }
 
         [DataMember]
-        public virtual ICollection<MaterialCost> MaterialCosts { get; set; }
+        public ICollection<MaterialCost> MaterialCosts { get; set; }
     }
 }

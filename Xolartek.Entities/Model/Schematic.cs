@@ -8,43 +8,43 @@ namespace Xolartek.Entities
     public class Schematic : ISchematic, IWeaponMelee, IWeaponRange, IWeaponTrap
     {
         [DataMember]
-        public virtual int Id { get; set; }
+        public int Id { get; set; }
         [DataMember]
-        public virtual string Name { get; set; }
+        public string Name { get; set; }
         [DataMember]
-        public virtual string Description { get; set; }
+        public string Description { get; set; }
         [DataMember]
-        public virtual int WeaponClass { get; set; }
+        public int WeaponClass { get; set; }
         [DataMember]
-        public virtual int Durability { get; set; }
+        public int Durability { get; set; }
         [DataMember]
-        public virtual int Level { get; set; }
+        public int Level { get; set; }
         [DataMember]
-        public virtual int Stars { get; set; }
+        public int Stars { get; set; }
         [DataMember]
-        public virtual int Damage { get; set; }
+        public int Damage { get; set; }
         [DataMember]
-        public virtual decimal CritChance { get; set; }
+        public decimal CritChance { get; set; }
         [DataMember]
-        public virtual decimal CritDamage { get; set; }
+        public decimal CritDamage { get; set; }
         [DataMember]
-        public virtual decimal AttackRate { get; set; }
+        public decimal AttackRate { get; set; }
         [DataMember]
-        public virtual decimal DurabilityPerUse { get; set; }
+        public decimal DurabilityPerUse { get; set; }
         [DataMember]
-        public virtual int Impact { get; set; }
+        public int Impact { get; set; }
         [DataMember]
-        public virtual decimal ReloadTime { get; set; }
+        public decimal ReloadTime { get; set; }
         [DataMember]
-        public virtual int MagazineSize { get; set; }
+        public int MagazineSize { get; set; }
         [DataMember]
-        public virtual int Range { get; set; }
+        public int Range { get; set; }
         [DataMember]
-        public virtual int AmmoCost { get; set; }
+        public int AmmoCost { get; set; }
 
         private ICollection<ITraitImpact> _traits;
         [DataMember]
-        public virtual ICollection<TraitImpact> Traits
+        public ICollection<TraitImpact> Traits
         {
             get
             {
@@ -73,7 +73,7 @@ namespace Xolartek.Entities
 
         private ICollection<IMaterialCost> _materials;
         [DataMember]
-        public virtual ICollection<MaterialCost> Materials
+        public ICollection<MaterialCost> Materials
         {
             get
             {
@@ -100,10 +100,10 @@ namespace Xolartek.Entities
             }
         }
 
-        public virtual int RarityId { get; set; }
+        public int RarityId { get; set; }
         private ITrait _rarity { get; set; }
         [DataMember]
-        public virtual Trait Rarity
+        public Trait Rarity
         {
             get
             {
@@ -126,10 +126,10 @@ namespace Xolartek.Entities
             }
         }
 
-        public virtual int? PictureId { get; set; }
+        public int? PictureId { get; set; }
         private IPicture _picture;
         [DataMember]
-        public virtual Picture Picture
+        public Picture Picture
         {
             get
             {
@@ -152,10 +152,10 @@ namespace Xolartek.Entities
             }
         }
 
-        public virtual int? WeaponEditionId { get; set; }
+        public int? WeaponEditionId { get; set; }
         private ITrait _weaponEdition;
         [DataMember]
-        public virtual Trait WeaponEdition
+        public Trait WeaponEdition
         {
             get
             {
@@ -178,10 +178,10 @@ namespace Xolartek.Entities
             }
         }
 
-        public virtual int? WeaponTypeId { get; set; }
+        public int? WeaponTypeId { get; set; }
         private ITrait _weaponType;
         [DataMember]
-        public virtual Trait WeaponType
+        public Trait WeaponType
         {
             get
             {

@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xolartek.Services", "Xolartek.Services\Xolartek.Services.csproj", "{D4976C60-4602-46F3-B99E-01A26576EE35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xolartek.Web", "Xolartek.Web\Xolartek.Web.csproj", "{C43C64BB-A28E-4A45-AFDE-D2C16D473656}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xolartek.Domain", "Xolartek.Domain\Xolartek.Domain.csproj", "{F1D236CB-2049-4029-B2FC-449D3F3FA898}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xolartek.Entities", "Xolartek.Entities\Xolartek.Entities.csproj", "{D1F93998-4C90-4527-AA25-BCE3E6B35798}"
@@ -21,10 +19,6 @@ Global
 		{D4976C60-4602-46F3-B99E-01A26576EE35}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4976C60-4602-46F3-B99E-01A26576EE35}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4976C60-4602-46F3-B99E-01A26576EE35}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C43C64BB-A28E-4A45-AFDE-D2C16D473656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C43C64BB-A28E-4A45-AFDE-D2C16D473656}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C43C64BB-A28E-4A45-AFDE-D2C16D473656}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C43C64BB-A28E-4A45-AFDE-D2C16D473656}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F1D236CB-2049-4029-B2FC-449D3F3FA898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F1D236CB-2049-4029-B2FC-449D3F3FA898}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1D236CB-2049-4029-B2FC-449D3F3FA898}.Release|Any CPU.ActiveCfg = Release|Any CPU

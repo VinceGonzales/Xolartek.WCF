@@ -7,10 +7,10 @@ namespace Xolartek.Entities
     public class Trait : ITrait
     {
         [DataMember]
-        public virtual int Id { get; set; }
+        public int Id { get; set; }
         [DataMember]
-        public virtual string Description { get; set; }
+        public string Description { get; set; }
         [DataMember]
-        public virtual ICollection<TraitImpact> TraitImpacts { get; set; }
+        public ICollection<TraitImpact> TraitImpacts { get; set; }
     }
 }

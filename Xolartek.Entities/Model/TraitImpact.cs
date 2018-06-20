@@ -6,19 +6,19 @@ namespace Xolartek.Entities
     public class TraitImpact : ITraitImpact
     {
         [DataMember]
-        public virtual int Id { get; set; }
+        public int Id { get; set; }
         [DataMember]
-        public virtual string Impact { get; set; }
+        public string Impact { get; set; }
         [DataMember]
-        public virtual int WeaponClass { get; set; }
+        public int WeaponClass { get; set; }
         [DataMember]
-        public virtual int TraitId { get; set; }
+        public int TraitId { get; set; }
         [DataMember]
-        public virtual int SchematicId { get; set; }
+        public int SchematicId { get; set; }
 
         private ITrait _trait { get; set; }
         [DataMember]
-        public virtual Trait Trait
+        public Trait Trait
         {
             get
             {
@@ -29,6 +29,7 @@ namespace Xolartek.Entities
                 _trait = (Trait)value;
             }
         }
+        [DataMember]
         ITrait ITraitImpact.Trait
         {
             get
@@ -43,7 +44,7 @@ namespace Xolartek.Entities
 
         private ISchematic _schematic;
         [DataMember]
-        public virtual Schematic Schematic
+        public Schematic Schematic
         {
             get
             {
@@ -54,6 +55,7 @@ namespace Xolartek.Entities
                 _schematic = (Schematic)value;
             }
         }
+        [DataMember]
         ISchematic ITraitImpact.Schematic
         {
             get

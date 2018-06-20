@@ -6,19 +6,19 @@ namespace Xolartek.Entities
     public class MaterialCost : IMaterialCost
     {
         [DataMember]
-        public virtual int Id { get; set; }
+        public int Id { get; set; }
         [DataMember]
-        public virtual int Cost { get; set; }
+        public int Cost { get; set; }
         [DataMember]
-        public virtual int WeaponClass { get; set; }
+        public int WeaponClass { get; set; }
         [DataMember]
-        public virtual int MaterialId { get; set; }
+        public int MaterialId { get; set; }
         [DataMember]
-        public virtual int SchematicId { get; set; }
+        public int SchematicId { get; set; }
 
         private IMaterial _material;
         [DataMember]
-        public virtual Material Material
+        public Material Material
         {
             get
             {
@@ -43,7 +43,7 @@ namespace Xolartek.Entities
 
         private ISchematic _schematic;
         [DataMember]
-        public virtual Schematic Schematic
+        public Schematic Schematic
         {
             get
             {

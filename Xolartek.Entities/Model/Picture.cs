@@ -7,12 +7,12 @@ namespace Xolartek.Entities
     public class Picture : IPicture
     {
         [DataMember]
-        public virtual int Id { get; set; }
+        public int Id { get; set; }
         [DataMember]
-        public virtual string Source { get; set; }
+        public string Source { get; set; }
         [DataMember]
-        public virtual string CSSClass { get; set; }
+        public string CSSClass { get; set; }
         [DataMember]
-        public virtual string Alternate { get; set; }
+        public string Alternate { get; set; }
     }
 }
