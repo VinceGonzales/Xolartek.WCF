@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2adedc0a-5d7d-4d82-805d-b15e60d0a320" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b766909b-ee62-4199-9405-3756f7439fa5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -21,14 +21,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:2112/" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8080/evals/meta" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="a08039c0-65e1-4421-9397-159027e1a6d0" SourceId="1" SourceUrl="http://localhost:2112/?disco" />
-    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="6f7b1437-11a2-4ec7-8d7a-dbf0f27f0c97" SourceId="1" SourceUrl="http://localhost:2112/?xsd=xsd1" />
-    <MetadataFile FileName="XolarService.wsdl" MetadataType="Wsdl" ID="1db984c6-1011-4c46-99e4-bc1017bece9e" SourceId="1" SourceUrl="http://localhost:2112/?wsdl" />
-    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="aefb8f39-1bfc-431d-9b54-6017dd861671" SourceId="1" SourceUrl="http://localhost:2112/?xsd=xsd2" />
-    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="4b3db00b-bea0-4e37-9f31-91e1d4b9bbdc" SourceId="1" SourceUrl="http://localhost:2112/?xsd=xsd0" />
+    <MetadataFile FileName="meta.xsd" MetadataType="Schema" ID="e2ba0683-d5fa-4a61-9bff-5118b132fe0e" SourceId="1" SourceUrl="http://localhost:8080/evals/meta?xsd=xsd1" />
+    <MetadataFile FileName="meta1.xsd" MetadataType="Schema" ID="af29de4f-9a72-4d8d-8cda-21aa88f39d9d" SourceId="1" SourceUrl="http://localhost:8080/evals/meta?xsd=xsd0" />
+    <MetadataFile FileName="XolarService.wsdl" MetadataType="Wsdl" ID="d36e53f0-e333-494f-ad11-9bdb3075f36e" SourceId="1" SourceUrl="http://localhost:8080/evals/meta" />
+    <MetadataFile FileName="meta2.xsd" MetadataType="Schema" ID="4156e3b1-675d-4de3-96b2-0527eebff1b2" SourceId="1" SourceUrl="http://localhost:8080/evals/meta?xsd=xsd2" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

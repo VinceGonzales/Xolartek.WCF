@@ -169,7 +169,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Connected Services\XolarService\Reference.cs">
+    <Compile Include="Connected Services\XoService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -181,10 +181,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\XolarService\item.disco" />
-    <None Include="Connected Services\XolarService\configuration91.svcinfo" />
-    <None Include="Connected Services\XolarService\configuration.svcinfo" />
-    <None Include="Connected Services\XolarService\Reference.svcmap">
+    <None Include="Connected Services\XoService\configuration91.svcinfo" />
+    <None Include="Connected Services\XoService\configuration.svcinfo" />
+    <None Include="Connected Services\XoService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -201,19 +200,19 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Connected Services\XolarService\item.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\XolarService\item1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\XolarService\item2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\XolarService\XolarService.wsdl" />
     <Content Include="Properties\DataSources\Xolartek.Entities.Material.datasource" />
     <Content Include="Properties\DataSources\Xolartek.Entities.Schematic.datasource" />
     <Content Include="Properties\DataSources\Xolartek.Entities.Trait.datasource" />
+    <None Include="Connected Services\XoService\meta.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\XoService\meta1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\XoService\meta2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\XoService\XolarService.wsdl" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -271,7 +270,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\XolarService\" />
+    <WCFMetadataStorage Include="Connected Services\XoService\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using Xolartek.Domain;
 using Xolartek.Entities;
-using Xolartek.Web.XolarService;
+using Xolartek.Web.XoService;
 
 namespace Xolartek.Web.Controllers
 {
@@ -32,7 +30,7 @@ namespace Xolartek.Web.Controllers
 
         public ActionResult Contact()
         {
-            XolarServiceClient service = new XolarServiceClient();
+            XolarServiceClient service = new XolarServiceClient("NetTcpBinding_IXolarService");
             List<Material> result = service.GetMaterials();
 
             return View(result);

@@ -10,6 +10,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xolartek.Entities", "Xolartek.Entities\Xolartek.Entities.csproj", "{D1F93998-4C90-4527-AA25-BCE3E6B35798}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xolartek.Web", "Xolartek.Web\Xolartek.Web.csproj", "{C43C64BB-A28E-4A45-AFDE-D2C16D473656}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D4976C60-4602-46F3-B99E-01A26576EE35} = {D4976C60-4602-46F3-B99E-01A26576EE35}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xolartek.Host", "Xolartek.Host\Xolartek.Host.csproj", "{15B5EA51-4488-4CF1-92D5-5451D2A71E3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +38,10 @@ Global
 		{C43C64BB-A28E-4A45-AFDE-D2C16D473656}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C43C64BB-A28E-4A45-AFDE-D2C16D473656}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C43C64BB-A28E-4A45-AFDE-D2C16D473656}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B5EA51-4488-4CF1-92D5-5451D2A71E3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B5EA51-4488-4CF1-92D5-5451D2A71E3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B5EA51-4488-4CF1-92D5-5451D2A71E3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B5EA51-4488-4CF1-92D5-5451D2A71E3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

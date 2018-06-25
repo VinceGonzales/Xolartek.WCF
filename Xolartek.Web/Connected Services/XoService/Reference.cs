@@ -8,11 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Xolartek.Web.XolarService {
+namespace Xolartek.Web.XoService {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="XolarService.IXolarService")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="XoService.IXolarService")]
     public interface IXolarService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IXolarService/GetSchematics", ReplyAction="http://tempuri.org/IXolarService/GetSchematicsResponse")]
@@ -35,12 +35,12 @@ namespace Xolartek.Web.XolarService {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IXolarServiceChannel : Xolartek.Web.XolarService.IXolarService, System.ServiceModel.IClientChannel {
+    public interface IXolarServiceChannel : Xolartek.Web.XoService.IXolarService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class XolarServiceClient : System.ServiceModel.ClientBase<Xolartek.Web.XolarService.IXolarService>, Xolartek.Web.XolarService.IXolarService {
+    public partial class XolarServiceClient : System.ServiceModel.ClientBase<Xolartek.Web.XoService.IXolarService>, Xolartek.Web.XoService.IXolarService {
         
         public XolarServiceClient() {
         }
