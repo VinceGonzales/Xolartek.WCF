@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xolartek.Domain", "Xolartek
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xolartek.Entities", "Xolartek.Entities\Xolartek.Entities.csproj", "{D1F93998-4C90-4527-AA25-BCE3E6B35798}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xolartek.Web", "Xolartek.Web\Xolartek.Web.csproj", "{C43C64BB-A28E-4A45-AFDE-D2C16D473656}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D1F93998-4C90-4527-AA25-BCE3E6B35798}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1F93998-4C90-4527-AA25-BCE3E6B35798}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1F93998-4C90-4527-AA25-BCE3E6B35798}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C43C64BB-A28E-4A45-AFDE-D2C16D473656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C43C64BB-A28E-4A45-AFDE-D2C16D473656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C43C64BB-A28E-4A45-AFDE-D2C16D473656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C43C64BB-A28E-4A45-AFDE-D2C16D473656}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

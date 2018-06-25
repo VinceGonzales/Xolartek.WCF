@@ -1,5 +1,5 @@
 ﻿@using Xolartek.Entities;
-@model List<Schematic>
+@model List<Material>
 @{
     ViewBag.Title = "Home Page";
 }
@@ -10,9 +10,9 @@
             <h3>HOME PAGE</h3>
         </div>
         <div class="col-sm-6">
-            @foreach(Schematic schema in Model)
+            @foreach(Material schema in Model)
             {
-                <div>Item</div>
+                <div>@schema.Description</div>
             }
         </div>
     </div>

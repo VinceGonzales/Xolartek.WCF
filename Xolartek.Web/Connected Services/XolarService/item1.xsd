@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Xolartek.Entities" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Xolartek.Entities" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfSchematic">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Schematic" nillable="true" type="tns:Schematic" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSchematic" nillable="true" type="tns:ArrayOfSchematic" />
+  <xs:complexType name="Schematic">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AmmoCost" type="xs:int" />
+      <xs:element minOccurs="0" name="AttackRate" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CritChance" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CritDamage" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Damage" type="xs:int" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Durability" type="xs:int" />
+      <xs:element minOccurs="0" name="DurabilityPerUse" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Impact" type="xs:int" />
+      <xs:element minOccurs="0" name="Level" type="xs:int" />
+      <xs:element minOccurs="0" name="MagazineSize" type="xs:int" />
+      <xs:element minOccurs="0" name="Materials" nillable="true" type="tns:ArrayOfMaterialCost" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Picture" nillable="true" type="tns:Picture" />
+      <xs:element minOccurs="0" name="Range" type="xs:int" />
+      <xs:element minOccurs="0" name="Rarity" nillable="true" type="tns:Trait" />
+      <xs:element minOccurs="0" name="ReloadTime" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Stars" type="xs:int" />
+      <xs:element minOccurs="0" name="Traits" nillable="true" type="tns:ArrayOfTraitImpact" />
+      <xs:element minOccurs="0" name="WeaponClass" type="xs:int" />
+      <xs:element minOccurs="0" name="WeaponEdition" nillable="true" type="tns:Trait" />
+      <xs:element minOccurs="0" name="WeaponType" nillable="true" type="tns:Trait" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Schematic" nillable="true" type="tns:Schematic" />
+  <xs:complexType name="ArrayOfMaterialCost">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MaterialCost" nillable="true" type="tns:MaterialCost" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMaterialCost" nillable="true" type="tns:ArrayOfMaterialCost" />
+  <xs:complexType name="MaterialCost">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cost" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Material" nillable="true" type="tns:Material" />
+      <xs:element minOccurs="0" name="MaterialId" type="xs:int" />
+      <xs:element minOccurs="0" name="Schematic" nillable="true" type="tns:Schematic" />
+      <xs:element minOccurs="0" name="SchematicId" type="xs:int" />
+      <xs:element minOccurs="0" name="WeaponClass" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MaterialCost" nillable="true" type="tns:MaterialCost" />
+  <xs:complexType name="Material">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="MaterialCosts" nillable="true" type="tns:ArrayOfMaterialCost" />
+      <xs:element minOccurs="0" name="Picture" nillable="true" type="tns:Picture" />
+      <xs:element minOccurs="0" name="PictureId" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Material" nillable="true" type="tns:Material" />
+  <xs:complexType name="Picture">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Alternate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CSSClass" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Picture" nillable="true" type="tns:Picture" />
+  <xs:complexType name="Trait">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="TraitImpacts" nillable="true" type="tns:ArrayOfTraitImpact" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Trait" nillable="true" type="tns:Trait" />
+  <xs:complexType name="ArrayOfTraitImpact">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TraitImpact" nillable="true" type="tns:TraitImpact" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTraitImpact" nillable="true" type="tns:ArrayOfTraitImpact" />
+  <xs:complexType name="TraitImpact">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Impact" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Schematic" nillable="true" type="tns:Schematic" />
+      <xs:element minOccurs="0" name="SchematicId" type="xs:int" />
+      <xs:element minOccurs="0" name="Trait" nillable="true" type="tns:Trait" />
+      <xs:element minOccurs="0" name="TraitId" type="xs:int" />
+      <xs:element minOccurs="0" name="WeaponClass" type="xs:int" />
+      <xs:element minOccurs="0" name="Xolartek.Entities.ITraitImpact.Schematic" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" name="Xolartek.Entities.ITraitImpact.Trait" nillable="true" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TraitImpact" nillable="true" type="tns:TraitImpact" />
+  <xs:complexType name="ArrayOfMaterial">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Material" nillable="true" type="tns:Material" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMaterial" nillable="true" type="tns:ArrayOfMaterial" />
+  <xs:complexType name="ArrayOfTrait">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Trait" nillable="true" type="tns:Trait" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrait" nillable="true" type="tns:ArrayOfTrait" />
+</xs:schema>

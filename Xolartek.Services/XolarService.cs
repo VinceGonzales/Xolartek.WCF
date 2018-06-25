@@ -7,7 +7,7 @@ using Xolartek.Entities;
 
 namespace Xolartek.Services
 {
-    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall)]
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall, ConcurrencyMode = ConcurrencyMode.Multiple)]
     public class XolarService : IXolarService, IDisposable
     {
         readonly XolarDatabase _Context = new XolarDatabase();
@@ -20,6 +20,7 @@ namespace Xolartek.Services
         {
             return _Context.Materials.ToList();
         }
+        //[OperationBehavior(Impersonation = ImpersonationOption.Required)]
         public List<Trait> GetTraits()
         {
             return _Context.Traits.ToList();

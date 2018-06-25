@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Xolartek.Domain;
 using Xolartek.Entities;
+using Xolartek.Web.XolarService;
 
 namespace Xolartek.Web.Controllers
 {
@@ -18,7 +19,7 @@ namespace Xolartek.Web.Controllers
         }
         public ActionResult Index()
         {
-            List<Schematic> result = db.Schematics.ToList();
+            List<Material> result = db.Materials.ToList();
             return View(result);
         }
 
@@ -31,9 +32,10 @@ namespace Xolartek.Web.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            XolarServiceClient service = new XolarServiceClient();
+            List<Material> result = service.GetMaterials();
 
-            return View();
+            return View(result);
         }
 
         protected override void Dispose(bool disposing)
